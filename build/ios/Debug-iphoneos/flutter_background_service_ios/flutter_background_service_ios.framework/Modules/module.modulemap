@@ -1,0 +1,11 @@
+framework module flutter_background_service_ios {
+  umbrella header "flutter_background_service_ios-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module flutter_background_service_ios.Swift {
+  header "flutter_background_service_ios-Swift.h"
+  requires objc
+}

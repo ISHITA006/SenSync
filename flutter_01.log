@@ -1,0 +1,75 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter run
+
+## exception
+
+RPCError: streamListen: (-32000) Bad state: The client closed with pending request "_setStreamIncludePrivateMembers".
+
+```
+#0      new _OutstandingRequest (package:vm_service/src/vm_service.dart:1746:45)
+#1      VmService._call (package:vm_service/src/vm_service.dart:2262:21)
+#2      VmService.streamListen (package:vm_service/src/vm_service.dart:2209:7)
+#3      IOSDeviceLogReader._listenToUnifiedLoggingEvents (package:flutter_tools/src/ios/devices.dart:672:44)
+#4      IOSDeviceLogReader.connectedVMService= (package:flutter_tools/src/ios/devices.dart:658:7)
+#5      FlutterDevice.connect.<anonymous closure> (package:flutter_tools/src/resident_runner.dart:337:50)
+<asynchronous suspension>
+```
+
+## flutter doctor
+
+```
+[32m[✓][39m Flutter (Channel stable, 3.7.6, on macOS 12.5 21G72 darwin-arm64, locale en-IN)
+    [32m•[39m Flutter version 3.7.6 on channel stable at /Applications/flutter
+    [32m•[39m Upstream repository https://github.com/flutter/flutter.git
+    [32m•[39m Framework revision 12cb4eb7a0 (4 weeks ago), 2023-03-01 10:29:26 -0800
+    [32m•[39m Engine revision ada363ee93
+    [32m•[39m Dart version 2.19.3
+    [32m•[39m DevTools version 2.20.1
+
+[31m[✗][39m Android toolchain - develop for Android devices
+    [32m•[39m Android SDK at /usr/local/Caskroom/android-platform-tools/34.0.0
+    [31m✗[39m cmdline-tools component is missing
+      Run `path/to/sdkmanager --install "cmdline-tools;latest"`
+      See https://developer.android.com/studio/command-line for more details.
+
+[32m[✓][39m Xcode - develop for iOS and macOS (Xcode 14.2)
+    [32m•[39m Xcode at /Applications/Xcode.app/Contents/Developer
+    [32m•[39m Build 14C18
+    [32m•[39m CocoaPods version 1.12.0
+
+[32m[✓][39m Chrome - develop for the web
+    [32m•[39m Chrome at /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+[32m[✓][39m Android Studio (version 2020.3)
+    [32m•[39m Android Studio at /Applications/Android Studio.app/Contents
+    [32m•[39m Flutter plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/9212-flutter
+    [32m•[39m Dart plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/6351-dart
+    [32m•[39m Java version OpenJDK Runtime Environment (build 11.0.10+0-b96-7281165)
+
+[32m[✓][39m IntelliJ IDEA Community Edition (version 2021.2)
+    [32m•[39m IntelliJ at /Applications/IntelliJ IDEA CE.app
+    [32m•[39m Flutter plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/9212-flutter
+    [32m•[39m Dart plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/6351-dart
+
+[32m[✓][39m VS Code (version 1.70.2)
+    [32m•[39m VS Code at /Users/anushaaggarwal/Downloads/Visual Studio Code.app/Contents
+    [32m•[39m Flutter extension version 3.60.0
+
+[32m[✓][39m Connected device (3 available)
+    [32m•[39m iPhone (134) (mobile) • 00008030-000A148A0210802E • ios            • iOS 16.3.1 20D67
+    [32m•[39m macOS (desktop)       • macos                     • darwin-arm64   • macOS 12.5 21G72 darwin-arm64
+    [32m•[39m Chrome (web)          • chrome                    • web-javascript • Google Chrome 111.0.5563.146
+
+[32m[✓][39m HTTP Host Availability
+    [32m•[39m All required HTTP hosts are available
+
+[33m![39m Doctor found issues in 1 category.
+```
