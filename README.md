@@ -16,7 +16,7 @@ An app that detects sensory overload in individuals with autism and links them w
 
 5. Go to "ios" folder inside the project directory, right click, and select "Open in Xcode" option. (insert image)
 
-6. Connect your iPhone to your MacBook using a USB cable (data transfer cable).
+6. Connect your iPhone to your MacBook using a USB or USB-c cable (data transfer cable).
 
 7. Select your iPhone as the debbuging device on Xcode. (insert image)
 
