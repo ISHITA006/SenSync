@@ -2,6 +2,9 @@
 
 An app that detects sensory overload in individuals with autism and links them with their caregiver to help them better! Solution for Google Developer Solution Challenge
 
+**NOTE: 
+The individual components: fetching health data in the background from the frontend as well as the model prediction are fully functional separately but are not currently integrated due to an end moment error.
+
 ## Running the project
 
 * In order to run all functionalities of the application and run the application on a physical iPhone device, the project needs to be run using Xcode on a MacBook.
