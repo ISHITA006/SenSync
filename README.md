@@ -14,11 +14,16 @@ An app that detects sensory overload in individuals with autism and links them w
 
 4. Open the project in Visual Studio Code IDE.
 
-5. Go to "ios" folder inside the project directory, right click, and select "Open in Xcode" option. (insert image)
+5. Go to "ios" folder inside the project directory, right click, and select "Open in Xcode" option. 
 
-6. Connect your iPhone to your MacBook using a USB or USB-c cable (data transfer cable).
+![image](https://user-images.githubusercontent.com/84574733/229269569-236725ce-e934-4c2f-aeaf-ede191abeef6.png)
 
-7. Select your iPhone as the debbuging device on Xcode. (insert image)
+7. Connect your iPhone to your MacBook using a USB or USB-c cable (data transfer cable).
+
+7. Select your iPhone as the debbuging device on Xcode.
+
+![image](https://user-images.githubusercontent.com/84574733/229269592-7fdd9f2a-3b1e-4915-8a7f-45938689a763.png)
+
 
 8. Go to iPhone Settings, Go to VPN and Device Management and Trust apps from developer "Apple development {appleid} {unique code}".
 
